@@ -1,0 +1,33 @@
+.body {
+  background-image: url("../../images/风景.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: calc(100vh - 120px);
+  margin: auto;
+  padding-top: 30px;
+  margin-top: 50px;
+}
+
+.middle {
+  background: rgba(255, 255, 255, 0.2);
+  height: calc(100vh - 230px);
+  width: 700px;
+  margin: auto;
+}
+
+.form {
+  height: calc(100vh - 230px);
+  width: 700px;
+  background-color: #515a6e;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+p {
+  display: inline-block;
+  color: #ffffff;
+}

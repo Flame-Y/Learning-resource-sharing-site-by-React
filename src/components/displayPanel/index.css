@@ -1,0 +1,38 @@
+.img {
+  /* height: 400px; */
+  text-align: center;
+  background-color: #fff;
+}
+img {
+  height: 400px;
+  margin: auto;
+  display: inline !important;
+}
+/* .ant-carousel .slick-prev,
+.ant-carousel .slick-next,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+  font-size: inherit;
+  color: currentColor;
+} */
+.leftButton,
+.rightButton {
+  border: none;
+  height: 36px;
+  width: 36px;
+  transition: 1s;
+  border-radius: 50%;
+  background-color: #001529;
+  color: #ff0000;
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  transform: translateY(-50%);
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.leftButton:hover,
+.rightButton:hover {
+  opacity: 1;
+}
