@@ -4,13 +4,7 @@
 
 ```
 # 克隆项目
-# github
-git clone https://github.com/QingXia-Ela/Rhine-Lab-Theme-Index-Page.git
-# gitee
-git clone https://gitee.com/shiinafan/Rhine-Lab-Theme-Index-Page.git
-
-# 进入项目目录
-cd Rhine-Lab-Theme-Index-Page
+git clone https://github.com/Flame-Y/Learning-resource-sharing-site-by-React.git
 
 # 安装依赖
 npm install
