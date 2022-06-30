@@ -53,7 +53,7 @@ const DisplayPanel = () => {
         <div>
           <h3 style={contentStyle}>
             <div className="img">
-              <a href="https://space.bilibili.com/672346917">
+              <a href="https://space.bilibili.com/672353429">
                 <img src={require("../../images/贝拉.png")} alt="" />
               </a>
             </div>
@@ -69,7 +69,7 @@ const DisplayPanel = () => {
         <div>
           <h3 style={contentStyle}>
             <div className="img">
-              <a href="https://space.bilibili.com/672346917">
+              <a href="https://space.bilibili.com/672328094">
                 <img src={require("../../images/嘉然.png")} alt="" />
               </a>
             </div>
@@ -78,7 +78,7 @@ const DisplayPanel = () => {
         <div>
           <h3 style={contentStyle}>
             <div className="img">
-              <a href="https://space.bilibili.com/672346917">
+              <a href="https://space.bilibili.com/672342685">
                 <img src={require("../../images/乃琳.png")} alt="" />
               </a>
             </div>
