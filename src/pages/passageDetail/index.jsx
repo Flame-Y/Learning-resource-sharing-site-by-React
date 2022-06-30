@@ -15,7 +15,7 @@ import {
 import { HomeOutlined, ReadOutlined } from "@ant-design/icons";
 
 import "./index.css";
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import {
   apiGetPassageResource,
   apiCreateComment,
@@ -29,6 +29,8 @@ const { TextArea } = Input;
 const PassageDetail = () => {
   // 获取动态路由的值
   const params = useParams();
+  const navigate = useNavigate();
+
   const id = params.id;
 
   const [visible, setVisible] = useState(false);
@@ -45,6 +47,9 @@ const PassageDetail = () => {
     const getPassageResource = (id) => {
       apiGetPassageResource({ passageID: id })
         .then(function (response) {
+          if (response.data[0] === null) {
+            navigate("/notFound");
+          }
           setPassageResource(response.data);
           let tag = Object.keys(response.data[2]);
           let Imgbase = [];
@@ -68,7 +73,7 @@ const PassageDetail = () => {
         });
     };
     getPassageResource(id);
-  }, [id]);
+  }, [id, navigate]);
   const getPassageResource = (id) => {
     apiGetPassageResource({ passageID: id })
       .then(function (response) {
